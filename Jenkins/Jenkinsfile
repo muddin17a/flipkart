@@ -1,5 +1,5 @@
-pipeline
-node (master)
+pipeline{
+node
 {
    stages{      
     stage('Checkout code') {
@@ -8,4 +8,5 @@ node (master)
         }
     }
        }
+}
  }
