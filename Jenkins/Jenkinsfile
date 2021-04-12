@@ -1,6 +1,10 @@
-pipeline{
-node
-{
+pipeline {
+
+    agent {
+        node {
+            label 'master'
+        }
+    }
    stages{      
     stage('Checkout code') {
         steps {
