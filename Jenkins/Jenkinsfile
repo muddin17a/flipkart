@@ -1,5 +1,5 @@
 pipeline
-node (any)
+node (master)
 {
    stages{      
     stage('Checkout code') {
