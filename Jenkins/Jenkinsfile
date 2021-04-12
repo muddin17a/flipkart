@@ -11,5 +11,12 @@ pipeline {
             checkout scm
         }
     }
+           stage('Build code') {
+        steps {
+             withMaven {
+      sh "mvn clean install"
+    }
+        }
+    }
        }
 }
