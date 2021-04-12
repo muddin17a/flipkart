@@ -1,10 +1,11 @@
 pipeline
+node (any)
 {
    stages{      
-      stage{ (checkout)
-          
-                checkout scm
-                
-          }
+    stage('Checkout code') {
+        steps {
+            checkout scm
+        }
+    }
        }
  }
